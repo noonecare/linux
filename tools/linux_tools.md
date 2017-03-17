@@ -21,7 +21,24 @@
 # 编译器
 
 - gcc
+> - gcc 编译 C 代码时，默认会连接（引用） /usr/ 和 /usr/lib 以及 LD_LIBRARY_PATH 环境变量路径下的 .so 文件（静态连接文件）和 .a 文件（动态连接文件）。除此之外，如果你想手动指定引用一个目录下的 .a 或者 .so 文件，可以执行
+-L 指明连接所在的目录， -l 指明连接文件名称（非文件名，比如 liba.so 的名称为 a）
+-I 指明头文件所在的目录
+```shell
+gcc example.c -L example_directory -l exampleshared
+```
+
+
+> - gcc 生成库文件
+```
+gcc -c -fPIC exmaple.c -o example.o
+gcc example.o --shared -o example.so
+```
+
 - make
+> - make 执行的是 MakeFile 文件，根据 MakeFile 中的语句，编译安装程序
+> - make install 是我最常用的语句
+
 - cmake
 
 
@@ -42,3 +59,4 @@
 # web
 - curl
 - wget
+
