@@ -2,15 +2,17 @@
 
 linux 文件的权限有 wrx， 使用 chmod 改变权限。这里主要讲一下比较特殊的权限：
 
+- 特殊权限
+> - s 权限： s 权限是一种可执行权限， a 文件对  others 有 s 权限，那么当 others 执行 a 文件时， others 可以具有 a 文件所有者的权限。
+> - t 权限是目录设置的特殊权限，设置了 t 权限的目录文件，非文件 owner 不能删除文件。
 
-s 权限： s 权限是一种可执行权限， a 文件对  others 有 s 权限，那么当 others 执行 a 文件时， others 可以具有 a 文件所有者的权限。
-
+- 设置权限(用 wrxts 表示权限，用数字表示权限)
+> - chmod [0-7][0-7][0-7] < match_file_string >
+> - chmod [augo(who)][+-][rwxst] < match_file_string >
 
 ----
 
 # ACL
-
-
 
 
 ---
