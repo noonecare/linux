@@ -23,7 +23,7 @@ case $parm in
         echo "Invalid argument"
 esac
 done
-
+# getopts 有两个隐含的变量 OPTARG 代表 option 的取值， OPTIND 代表输入了几个 OPTION
 shift $(((OPTIND-1)))
 
 echo $1
