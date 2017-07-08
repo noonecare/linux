@@ -19,3 +19,4 @@ sudo apt-get install maven
 
 问题解决。
 
+teamcity is similar to jenkins
