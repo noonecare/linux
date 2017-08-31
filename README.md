@@ -4,34 +4,15 @@ You can use the [editor on GitHub](https://github.com/noonecare/linux/edit/maste
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+- Bash Shell
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- 操作系统
 
-```markdown
-Syntax highlighted code block
+- TCP/IP 协议
 
-# Header 1
-## Header 2
-### Header 3
+- 数据库
 
-- Bulleted
-- List
+- 常用工具
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/noonecare/linux/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
