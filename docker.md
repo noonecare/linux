@@ -39,6 +39,21 @@ CMD 会被运行 Contaner 时的语句覆盖；ENTRYPOINT 不会，ENTRYPOINT。
 
 6. 通过 link 和 volume 连接多个 container 提供一套服务
 
+7. volume 和 mount ?
+volume 就是 container 中可用于共享数据以及持久化数据的文件。
+mount 是对于 volume 的操作，通过 mount 建立本地文件系统和 Container 中 volume 的对应。
+
+8. docker-compose.yaml 中有 volumes volumes-from volumes-driver , 这三个选项有什么联系有什么区别?
+volumes 用于声明 volume
+[volumes-from 用于引用其他 container 中已经创建的 volume（如果当前container 中已经有一个和 volume-from 的volume 同名的 volume ，直接 volume 是不是会报错）](https://jiajially.gitbooks.io/dockerguide/content/chapter_fastlearn/docker_run/--volumes-from.html)
+volumes-from 可以用于持久化 volume。
+[volume_driver](https://docs.docker.com/compose/compose-file/compose-file-v2/#userns_mode) docker 官方文档上有介绍，很少用，不知道也无所谓。
+
+
+
+
+
+
 更多问题：
 
 kubernetes: 在集群上部署 container， 非常容易横向扩展，除此之外 kubernetes 可以监控 container 的运行状况。
